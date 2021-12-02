@@ -69,3 +69,5 @@ word_bank = ["science", "reef", "rat"]
 
 when puts "Would you like to play?"
     if "y" then puts "OK then!"
+
+        
