@@ -69,12 +69,15 @@ class Words
     def make_a_rat
         puts "rat"
     end
-    def make_a_reef
-        puts "reef"
-    end
-    def get_some_rest
-        puts "rest"
-    end 
 end
 
+mocha = Words.new
+mocha.make_a_rat
 
+class Words 
+    def turn_to_mystery
+        if mocha.equal?("rat")
+            then mocha.sub! 'rat', '_ _ _'
+        end
+    end
+end
