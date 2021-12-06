@@ -65,9 +65,16 @@ class Person
     end
 end
 
-word_bank = ["science", "reef", "rat"]
+class Words 
+    def make_a_rat
+        puts "rat"
+    end
+    def make_a_reef
+        puts "reef"
+    end
+    def get_some_rest
+        puts "rest"
+    end 
+end
 
-when puts "Would you like to play?"
-    if "y" then puts "OK then!"
 
-        "something"
