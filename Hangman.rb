@@ -113,10 +113,11 @@ if userAgree == 'Y' or userAgree == 'y'
             putc("_")
             putc("|")
       end
-        puts 'Now the next one... Q or W or E or T or Y or U or I or O or P or A or S or D or F or G or H or J or K or 
+        puts 'Now the next one... Q or W or E or R or T or Y or U or I or O or P or A or S or D or F or G or H or J or K or 
         L or Z or X or C or V or B or N or M'
         userAgree = gets.chomp
         if userAgree == 'A' or userAgree == 'a'
+            userAgree == true
             puts "yippee. you did it."
             puts "ra"
   else 
@@ -167,7 +168,74 @@ if userAgree == 'Y' or userAgree == 'y'
         putc("|")
         putc(?\n)
   end
-else
-  userAgree = false
-  puts 'Then ya should get out.'
-end
+        puts 'Hopefully ya get this one right.. because I have more IMPORTANT things to do.. so get it right. Q or W or E or R or T or Y or U or I or O 
+            or P or A or S or D or F or G or H or J or K or L or Z or X or C or V or B or N or M'
+            userAgree == gets.chomp
+            if userAgree == 'T' or userAgree == 't'
+                userAgree == true
+                puts 'YOU DID IT!! NOW I CAN LEAVE!! THIS IS WONDERFUL!!!'
+                puts 'rat'
+            else 
+                userAgree == false
+                puts "This is taking too long. YOU LOSE. Bye-bye!"
+                putc(" ")
+                putc(" ")
+                putc("_")
+                putc("_")
+                putc("_")
+                putc(?\n)
+                putc(" ")
+                putc("|")
+                putc(" ")
+                putc(" ")
+                putc(" ")
+                putc("|")
+                putc(" ")
+                putc(" ")
+                putc(" ")
+                putc(?\n)
+                putc(" ")
+                putc("|")
+                putc("_")
+                putc("_")
+                putc("_")
+                putc("|")
+                putc("           ")
+                putc("      ")
+                putc("      ")
+                putc(?\n)
+                putc(" ")
+                putc(" ") 
+                putc("/")
+                putc("|")
+                putc("\\")
+                putc(?\n)
+                putc(" ")
+                putc("/")
+                putc(" ")
+                putc("|")
+                putc(" ")
+                putc("\\")
+                putc(?\n)
+                putc("           ")
+                putc("      ")
+                putc("      ")
+                putc("|")
+                putc(?\n)
+                putc(" ")
+                putc(" ")
+                putc("/")
+                putc(" ")
+                putc("\\")
+                putc(?\n)
+                putc(" ")
+                putc("/")
+                putc(" ")
+                putc(" ")
+                putc(' ')
+                putc("\\")
+            end
+        else
+            userAgree = false
+             puts 'Then ya should get out.' 
+        end
