@@ -71,13 +71,16 @@ class Words
     end
 end
 
-mocha = Words.new
-mocha.make_a_rat
-
-class Words 
-    def turn_to_mystery
-        if mocha.equal?("rat")
-            then mocha.sub! 'rat', '_ _ _'
-        end
-    end
+class User
 end
+
+print 'Do ya wana use the Hangman thing?   Y or N'
+userAgree = gets.chomp
+if userAgree == 'Y' or userAgree == 'y'
+  userAgree = true
+else
+  userAgree = false
+end
+
+mocha = Words.new.make_a_rat
+
