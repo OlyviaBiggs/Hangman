@@ -1,122 +1,52 @@
-class Person 
-    def head
-        putc(" ")
-        putc(" ")
-        putc("_")
-        putc("_")
-        putc("_")
-        putc(?\n)
-        putc(" ")
-        putc("|")
-        putc(" ")
-        putc(" ")
-        putc(" ")
-        putc("|")
-        putc(" ")
-        putc(" ")
-        putc(" ")
-        putc(?\n)
-        putc(" ")
-        putc("|")
-        putc("_")
-        putc("_")
-        putc("_")
-        putc("|")
-    end
-
-    def body
-        putc("           ")
-        putc("      ")
-        putc("      ")
-        putc(?\n)
-        putc(" ")
-        putc(" ") 
-        putc("/")
-        putc("|")
-        putc("\\")
-        putc(?\n)
-        putc(" ")
-        putc("/")
-        putc(" ")
-        putc("|")
-        putc(" ")
-        putc("\\")
-        putc(?\n)
-        putc("           ")
-        putc("      ")
-        putc("      ")
-        putc("|")
-        putc(?\n)
-    end
-
-    def legs
-        putc(" ")
-        putc(" ")
-        putc("/")
-        putc(" ")
-        putc("\\")
-        putc(?\n)
-        putc(" ")
-        putc("/")
-        putc(" ")
-        putc(" ")
-        putc(' ')
-        putc("\\")
-    end
-end
-
-class Words 
-    def make_a_rat
-        puts "rat"
-    end
-end
-
-class User
-end
-
-#mocha = Words.new.make_a_rat
-
-print 'Do ya wana use the Hangman thing?   Y or N'
+print 'Do you want to use the Hangman thing?   Y or N'
 userAgree = gets.chomp
 if userAgree == 'Y' or userAgree == 'y'
   userAgree = true
-    puts 'Then we are gonna use the Hangman thing.'
-    puts 'The word is three letters, none of the letters repeat. Q or W or E or R or T or Y or U or I or O or P or A or S or D or F or G or H or J or K or 
-  L or Z or X or C or V or B or N or M'
-  userAgree = gets.chomp
-  if userAgree == 'R' or userAgree == 'r'
-    userAgree == true
-        puts 'Good job! You got a letter in there. woo-hoo.'
-    else 
-        userAgree == false
-            puts 'Nope! Not even close! Now put a head...'
-            putc(" ")
-            putc(" ")
-            putc("_")
-            putc("_")
-            putc("_")
-            putc(?\n)
-            putc(" ")
-            putc("|")
-            putc(" ")
-            putc(" ")
-            putc(" ")
-            putc("|")
-            putc(" ")
-            putc(" ")
-            putc(" ")
-            putc(?\n)
-            putc(" ")
-            putc("|")
-            putc("_")
-            putc("_")
-            putc("_")
-            putc("|")
-      end
-        puts 'Now the next one... Q or W or E or R or T or Y or U or I or O or P or A or S or D or F or G or H or J or K or 
-        L or Z or X or C or V or B or N or M'
+    puts 'Then lets play.'
+else 
+    userAgree = false
+    exit
+end
+
+
+
+puts 'The word is three letters, none of the letters repeat.'
+userAgree = gets.chomp
+if userAgree == 'R' or userAgree == 'r' or userAgree == 'A' or userAgree == 'a' or userAgree == 'T' or userAgree == 't'
+userAgree == true
+    puts 'Good job! You got a letter in there. woo-hoo.'
+else 
+    userAgree == false
+        puts 'Nope! Not even close! Now put a head...'
+        putc(" ")
+        putc(" ")
+        putc(" ")
+        putc(" ")
+        putc("_")
+        putc("_")
+        putc("_")
+        putc(?\n)
+        putc(" ")
+        putc("|")
+        putc("O")
+        putc("-")
+        putc("O")
+        putc("|")
+        putc(" ")
+        putc(" ")
+        putc(" ")
+        putc(?\n)
+        putc(" ")
+        putc("|")
+        putc("_")
+        putc("_")
+        putc("_")
+        putc("|")
+        putc(?\n) 
+    end
+        puts 'Now the next one...'
         userAgree = gets.chomp
-        if userAgree == 'A' or userAgree == 'a'
+        if userAgree == 'A' or userAgree == 'a' or userAgree == 'R' or userAgree == 'r' or userAgree == 'T' or userAgree == 't'
             userAgree == true
             puts "yippee. you did it."
             puts "ra"
@@ -131,9 +61,9 @@ if userAgree == 'Y' or userAgree == 'y'
         putc(?\n)
         putc(" ")
         putc("|")
-        putc(" ")
-        putc(" ")
-        putc(" ")
+        putc("=")
+        putc("-")
+        putc("=")
         putc("|")
         putc(" ")
         putc(" ")
@@ -168,16 +98,15 @@ if userAgree == 'Y' or userAgree == 'y'
         putc("|")
         putc(?\n)
   end
-        puts 'Hopefully ya get this one right.. because I have more IMPORTANT things to do.. so get it right. Q or W or E or R or T or Y or U or I or O 
-            or P or A or S or D or F or G or H or J or K or L or Z or X or C or V or B or N or M'
+        puts 'Hopefully ya get this one right.. because I have more IMPORTANT things to do.. so get it right.'
             userAgree == gets.chomp
-            if userAgree == 'T' or userAgree == 't'
+            if userAgree == 'T' or userAgree == 't' or userAgree == 'A' or userAgree == 'a' or userAgree == 'R' or userAgree == 'r'
                 userAgree == true
                 puts 'YOU DID IT!! NOW I CAN LEAVE!! THIS IS WONDERFUL!!!'
                 puts 'rat'
-            else 
+            else
                 userAgree == false
-                puts "This is taking too long. YOU LOSE. Bye-bye!"
+                puts "Well, if you guessed the word 'rat' then ya won. But I hate it when people win this game. So you lose."
                 putc(" ")
                 putc(" ")
                 putc("_")
@@ -186,9 +115,9 @@ if userAgree == 'Y' or userAgree == 'y'
                 putc(?\n)
                 putc(" ")
                 putc("|")
-                putc(" ")
-                putc(" ")
-                putc(" ")
+                putc("x")
+                putc("~")
+                putc("x")
                 putc("|")
                 putc(" ")
                 putc(" ")
@@ -235,7 +164,3 @@ if userAgree == 'Y' or userAgree == 'y'
                 putc(' ')
                 putc("\\")
             end
-        else
-            userAgree = false
-             puts 'Then ya should get out.' 
-        end
